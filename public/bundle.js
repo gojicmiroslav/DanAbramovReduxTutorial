@@ -113,13 +113,13 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _About = __webpack_require__(242);
+	var _DanAvramovGettingStarted = __webpack_require__(243);
 
-	var _About2 = _interopRequireDefault(_About);
+	var _DanAvramovGettingStarted2 = _interopRequireDefault(_DanAvramovGettingStarted);
 
-	var _Contact = __webpack_require__(243);
+	var _ReactCounterExample = __webpack_require__(242);
 
-	var _Contact2 = _interopRequireDefault(_Contact);
+	var _ReactCounterExample2 = _interopRequireDefault(_ReactCounterExample);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -130,8 +130,9 @@
 			_reactRouter.Route,
 			{ path: '/', component: _App2.default },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: '/react-counter-example', component: _ReactCounterExample2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: '/dan-avramov-getting-started', component: _DanAvramovGettingStarted2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: '/redux-counter-example', component: _ReactCounterExample2.default })
 		)
 	), document.getElementById("app"));
 
@@ -26739,17 +26740,8 @@
 							{ className: 'nav-item' },
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: '/about', activeClassName: 'active', className: 'nav-link' },
-								'About'
-							)
-						),
-						_react2.default.createElement(
-							'li',
-							{ className: 'nav-item' },
-							_react2.default.createElement(
-								_reactRouter.Link,
-								{ to: '/contact', activeClassName: 'active', className: 'nav-link' },
-								'Contact'
+								{ to: '/dan-avramov-getting-started', activeClassName: 'active', className: 'nav-link' },
+								'Dan Avramov Getting Started'
 							)
 						)
 					),
@@ -26802,7 +26794,7 @@
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -26814,25 +26806,21 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var About = function About(props) {
+	var ReactCounterExample = function ReactCounterExample() {
 		return _react2.default.createElement(
-			"div",
-			{ className: "card-block" },
-			_react2.default.createElement(
-				"h2",
-				{ className: "card-title" },
-				"About Page"
-			)
+			'h2',
+			null,
+			'React Counter Example'
 		);
 	};
 
-	exports.default = About;
+	exports.default = ReactCounterExample;
 
 /***/ },
 /* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -26842,26 +26830,36 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(184);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Contact = function Contact() {
+	var DanAvramovGettingStarted = function DanAvramovGettingStarted(props) {
 		return _react2.default.createElement(
-			"div",
-			{ className: "card-block" },
+			'div',
+			null,
 			_react2.default.createElement(
-				"h4",
-				{ className: "card-title" },
-				"Contact: ",
+				'h1',
+				null,
+				'Dan Avramov Getting Started'
+			),
+			_react2.default.createElement(
+				'ul',
+				null,
 				_react2.default.createElement(
-					"a",
-					{ href: "mailto:miroslav.gojic.78@gmail.com" },
-					" miroslav.gojic.78@gmail.com"
+					'li',
+					null,
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/redux-counter-example' },
+						'Redux: React Counter Example'
+					)
 				)
 			)
 		);
 	};
 
-	exports.default = Contact;
+	exports.default = DanAvramovGettingStarted;
 
 /***/ }
 /******/ ]);
